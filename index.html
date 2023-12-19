@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>SAE 105 - Intégration</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" sizes="16x16" type="image/png" href="assets/logo.png">
+    </head>
+
+    <body>
+        <header>
+        <a href="#" class="logo">Bastien & Hang</a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">>Home</a></1i>
+                    <li id="list"><a href="about.html">>About</a></1i>
+                    <li id="list2"><a href="work.html">>Works</a></1i>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <img src="assets/5509862.jpg" id="background">
+                <h2>Bienvenue 👋</h2>
+            </section>
+
+            <article>
+
+                
+
+            </article>
+        </main>
+
+                        
+        <script>
+
+            let head = document.getElementById('list')
+            let head2 = document.getElementById('list2')
+            let menu = document.getElementById('list3')
+            let menu2 = document.getElementById('list4')
+
+            let bg = document.getElementById('stars')
+            let text = document.getElementById('text')
+            let text2 = document.getElementById('text2')
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                text.style.marginTop = value * 0.01 + 'px';
+                bg.style.top = value * 0.8 + 'px';
+                text2.style.marginTop = value * 1 +'px';
+            })
+        </script>
+    </body>
+</html>
