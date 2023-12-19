@@ -1,14 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins :300,400,500,600,700,800,960&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: monospace;
+  font-weight: bold;
   scroll-behavior: smooth;
   cursor: url("assets/logo.png"), auto;
 }
 body {
   min-height: 100vh;
+
   background: #2f0a45;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -34,11 +36,11 @@ header .logo::after {
   right: -10px;
 }
 header .logo {
-  color: #fff;
+  color: white;
   font-weight: 700;
   text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
+  font-size: 5em;
+  text-transform:capitalize;
   letter-spacing: 2px;
 }
 header ul {
@@ -49,23 +51,27 @@ header ul {
 }
 header ul li {
   list-style: none;
-  margin-left: 20px;
+  padding: 10px;
 }
 header ul li a {
   text-decoration: none;
-  padding: 6px 15px;
+  padding: 12px 20px;
   color: #fff;
+  font-size: 1.5em;
   border-radius: 20px;
   transition: 0.7s;
 }
 header ul li a:hover, header ul li a.active {
-  background: #fff;
+  background: #D9D9D9;
   color: #2b1055;
   transition: 0.7s;
+  padding: 12px 50px;
   cursor: crosshair;
 }
 
+
 /* ------------------Main----------------- */ 
+
 .main {
     background: #2f0a45;
     display: flex;
@@ -77,15 +83,17 @@ section {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-section h2 {
+section h1,i {
     color: white;
-    font-size: 3em;
+    font-size: 8em;
     font-weight: bold;
     z-index: 10;
+    transition: all 0.1s;
 }
 section img {
   position: absolute;
@@ -101,7 +109,31 @@ section img {
 
 article {
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
+article::after {
+  content: '';
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#2f0a45,transparent);
+  z-index: 1;
+}
+
+
+/* BOX */
+.box {
+  width: 30vw;
+  height: 550px;
+  border-radius: 33px;
+  background: #D9D9D9; 
+}
+
 
 /* ------------------Footer----------------- */ 
 .footer {
@@ -109,12 +141,36 @@ article {
     height: 60px;
     background: #141A26;
     display: flex;
-    width: 358px;
-    height: 58px;
+    width: 350px;
+    height: 50px;
     flex-direction: column;
     justify-content: center;
 }
 
 .footer p {
     color: white;
+}
+
+
+
+
+/* ----------------Code stars ------------*/
+
+.sky {
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #FFF;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }

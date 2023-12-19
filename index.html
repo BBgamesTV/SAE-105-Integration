@@ -4,6 +4,7 @@
         <title>SAE 105 - Intégration</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" sizes="16x16" type="image/png" href="assets/logo.png">
+        <script src="https://kit.fontawesome.com/9e5fc47a4e.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -21,34 +22,79 @@
         <main>
             <section>
                 <img src="assets/5509862.jpg" id="background">
-                <h2>Bienvenue 👋</h2>
+                <h1 id="text1">Notre Passion</h1>
+                <i id="arrow" class="fa-solid fa-angles-down"></i>
             </section>
 
-            <article>
+            <article id="sky" class="sky">
 
+
+                <div class="box">
+                    <h1>Box 1</h1>
+                    <img src="" alt="Espace1">
+                </div>
                 
+                <div class="box">
+                    <h1>Box 2</h1>
+                    <img src="" alt="Espace2">
+                </div>
 
             </article>
         </main>
 
                         
         <script>
-
-            let head = document.getElementById('list')
-            let head2 = document.getElementById('list2')
-            let menu = document.getElementById('list3')
-            let menu2 = document.getElementById('list4')
-
-            let bg = document.getElementById('stars')
-            let text = document.getElementById('text')
-            let text2 = document.getElementById('text2')
+            let text = document.getElementById('text1')
+            let arrow = document.getElementById('arrow')
 
             window.addEventListener('scroll',function(){
                 let value = window.scrollY;
-                text.style.marginTop = value * 0.01 + 'px';
-                bg.style.top = value * 0.8 + 'px';
-                text2.style.marginTop = value * 1 +'px';
+                text.style.marginTop = value * 0.12 + 'vh';
+                let opacity_value = value / 10;
+                arrow.style.opacity = 100 - opacity_value + '%';
+                console.log(value)
+                if(value > 1000){
+                    text.innerHTML = "L'astronomie";
+                    text.style.textTransform = "Capitalize";
+                    text.style.color = "#baeaf8"
+                } else {
+                    text.innerHTML = "Notre Passion";
+                    text.style.color = "white"
+                }  
             })
+
+
+            function createStar() {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.zIndex = 10;
+                document.querySelector('.sky').appendChild(star);
+            }
+
+            let keysPressed = [];
+
+            window.addEventListener('keydown', function(e) {
+                keysPressed.push(e.key);
+                keysPressed = keysPressed.slice(-5); 
+
+                if (
+                    keysPressed[0] === 's' &&
+                    keysPressed[1] === 't' &&
+                    keysPressed[2] === 'a' &&
+                    keysPressed[3] === 'r' &&
+                    keysPressed[4] === 's'
+                ) {
+                    let bg_sky = document.getElementById('sky')
+                    bg_sky.style.background = "black"
+                    for (let i = 0; i < 300; i++) {
+                        createStar();
+                    }
+                    console.log('Code Activé les touches ont été pressées dans l\'ordre !');
+                }
+
+            });
         </script>
     </body>
 </html>
