@@ -1,15 +1,17 @@
 <!doctype html>
-<html>
+<html lang="fr">
     <head>
         <title>SAE 105 - Intégration</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" sizes="16x16" type="image/png" href="assets/logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
         <script src="https://kit.fontawesome.com/9e5fc47a4e.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="assets/uranus_1876100.png" />
     </head>
 
     <body>
         <header>
-        <a href="#" class="logo">Bastien & Hang</a>
+        <a href="#" class="logo"><span>B</span><span>a</span><span>s</span><span>t</span><span>i</span><span>e</span><span>n</span> <span>&</span> <span>H</span><span>a</span><span>n</span><span>g</span></a>
             <nav>
                 <ul>
                     <li><a href="#" class="active">>Home</a></1i>
@@ -21,7 +23,7 @@
 
         <main>
             <section>
-                <img src="assets/5509862.jpg" id="background">
+                <img src="assets/5509862.jpg" alt="Image de Fond" id="background">
                 <h1 id="text1">Notre Passion</h1>
                 <i id="arrow" class="fa-solid fa-angles-down"></i>
             </section>
@@ -30,18 +32,25 @@
 
 
                 <div class="box">
-                    <h1>Box 1</h1>
-                    <img src="" alt="Espace1">
+                    <img width="100%" height="80%" src="./assets/constellations-grande-ourse-petite-ourse.jpg" alt="Espace1">
+                    <p></p>
                 </div>
                 
                 <div class="box">
-                    <h1>Box 2</h1>
-                    <img src="" alt="Espace2">
+                    <img width="100%" height="80%" src="./assets/prise-vue-verticale-beau-ciel-etoile.jpg" alt="Espace2">
+                    <p></p>
                 </div>
 
             </article>
-        </main>
 
+            <footer>
+                <p>© 2023 MMI S1 - SAE 105</p>
+                <p>Bastien Brousse & Thuy Hang Nguyen</p>
+                <p id="credits">Images de <a href="https://fr.freepik.com">Freepik</a></p>   
+                </footer>
+        </main>
+        <!-- <a href="https://fr.freepik.com/icone/uranus_1876100">Icône de Eucalyp</a> -->
+        <!-- <a href="https://fr.freepik.com/photos-gratuite/prise-vue-verticale-beau-ciel-etoile_11818437.htm#query=astronomie&position=2&from_view=search&track=sph&uuid=e8189902-b6a6-4343-9ef4-4f90cd22375d">Image de wirestock</a> sur Freepik -->
                         
         <script>
             let text = document.getElementById('text1')
@@ -49,7 +58,7 @@
 
             window.addEventListener('scroll',function(){
                 let value = window.scrollY;
-                text.style.marginTop = value * 0.12 + 'vh';
+                text.style.marginTop = value * 0.13 + 'vh';
                 let opacity_value = value / 10;
                 arrow.style.opacity = 100 - opacity_value + '%';
                 console.log(value)
@@ -69,8 +78,8 @@
                 star.classList.add('star');
                 star.style.left = Math.random() * 100 + '%';
                 star.style.top = Math.random() * 100 + '%';
-                star.style.zIndex = 10;
-                document.querySelector('.sky').appendChild(star);
+                star.style.zIndex = 1;
+                document.querySelector('article').appendChild(star);
             }
 
             let keysPressed = [];
@@ -88,7 +97,7 @@
                 ) {
                     let bg_sky = document.getElementById('sky')
                     bg_sky.style.background = "black"
-                    for (let i = 0; i < 300; i++) {
+                    for (let i = 0; i < 100; i++) {
                         createStar();
                     }
                     console.log('Code Activé les touches ont été pressées dans l\'ordre !');
