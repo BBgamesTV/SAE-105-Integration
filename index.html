@@ -23,9 +23,9 @@
 
         <main>
             <section>
-                <img src="assets/5509862.jpg" alt="Image de Fond" id="background">
+                <video src="assets/vecteezy_seamless-loop-galaxy-exploration-through-outer-space-towards_28716272.mp4" alt="Image de Fond" loop autoplay muted id="background"></video>
                 <h1 id="text1">Notre Passion</h1>
-                <i id="arrow" class="fa-solid fa-angles-down"></i>
+                <a href="#sky"> <i id="arrow" class="fa-solid fa-angles-down"></i></a>
             </section>
 
             <article id="sky" class="sky">
@@ -46,7 +46,7 @@
             <footer>
                 <p>© 2023 MMI S1 - SAE 105</p>
                 <p>Bastien Brousse & Thuy Hang Nguyen</p>
-                <p id="credits">Images de <a href="https://fr.freepik.com">Freepik</a></p>   
+                <p id="credits">Video de <a href="https://fr.vecteezy.com/video/28716272-sans-couture-boucle-galaxie-exploration-par-exterieur-espace-vers-embrase-laiteux-facon-galaxie-boucle-animation-de-en-volant-par-embrase-nebuleuses-des-nuages-et-etoiles-champ">Ismail Sahin</a> et images de <a href="https://fr.freepik.com/">freepik</a></p>   
                 </footer>
         </main>
         <!-- <a href="https://fr.freepik.com/icone/uranus_1876100">Icône de Eucalyp</a> -->
@@ -58,7 +58,7 @@
 
             window.addEventListener('scroll',function(){
                 let value = window.scrollY;
-                text.style.marginTop = value * 0.13 + 'vh';
+                text.style.marginTop = value * 0.135 + 'vh';
                 let opacity_value = value / 10;
                 arrow.style.opacity = 100 - opacity_value + '%';
                 console.log(value)

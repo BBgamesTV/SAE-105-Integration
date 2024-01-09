@@ -9,7 +9,6 @@
 }
 body {
   min-height: 100vh;
-
   background: #2f0a45;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -100,8 +99,9 @@ section h1,i {
     z-index: 1;
     transition: all 0.1s;
 }
-section img {
+section #background{
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -161,6 +161,9 @@ footer p {
 
 footer a {
   color: aqua;
+}
+footer a:hover{
+  cursor:grab;
 }
 
 
