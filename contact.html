@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><span>B</span><span>a</span><span>s</span><span>t</span><span>i</span><span>e</span><span>n</span> <span>&</span> <span>H</span><span>a</span><span>n</span><span>g</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">>Home</a></1i>
+                        <li id="list"><a href="about.html">>About</a></1i>
+                        <li id="list2"><a href="#">>Contact</a></1i>
+                    </ul>
+                </nav>
+        </header>
+
+        <main>
+            <section>
+                <video src="assets/vecteezy_seamless-loop-galaxy-exploration-through-outer-space-towards_28716272.mp4" alt="Image de Fond" loop autoplay muted id="background"></video>
+                <h1 id="text1">Page Contact</h1>
+                <a href="#sky"> <i id="arrow" class="fa-solid fa-angles-down"></i></a>
+            </section>
+
+            <article class="" style="background: black;">
+
+                <h1 style="color: white;">Formulaire de Contact</h1>
+
+                <form action="./POST.php" method="POST">
+                    <div class="name">
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" placeholder="Nom">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" placeholder="Prénom">
+                    </div>
+
+                    <div class="menu_deroulant">
+                        <select>
+                            <option value="Mr">M.</option>
+                            <option value="Mme">Mme</option>
+                        </select>
+                    </div>
+
+                    <div class="bouton_radio">
+                        <input type="radio" name="choix1">
+                        <label for="choix1">Bien</label>
+                        <input type="radio" name="choix2">
+                        <label for="choix2">Moyen</label>
+                        <input type="radio" name="choix3">
+                        <label for="choix3">Mauvais</label>
+                    </div>
+
+                    <input type="submit" name="envoyer" placeholder="Envoyer">
+
+                </form>
+
+
+                
+
+            </article>
+        </main>
+    
+    </body>
+</html>

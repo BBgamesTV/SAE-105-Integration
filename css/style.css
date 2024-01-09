@@ -162,6 +162,7 @@ footer p {
 footer a {
   color: aqua;
 }
+
 footer a:hover{
   cursor:grab;
 }
@@ -186,4 +187,15 @@ footer a:hover{
   50% {
     opacity: 0;
   }
+}
+
+
+/* -----------------------Form----------------------- */ 
+
+form {
+  border-radius: 20px;
+  background: #1E1E1E;
+  width: 70vw;
+  height:70vh;
+  padding: 30px;
 }
