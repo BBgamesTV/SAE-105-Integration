@@ -21,3 +21,5 @@ Le site comprendra les sections suivantes :
 Thuy Hang Nguyen
 
 N'hésitez pas à cloner ce projet et à contribuer en soumettant des pull requests ou en ouvrant des issues !
+
+https://bbgamestv.github.io/SAE-105-Integration/
