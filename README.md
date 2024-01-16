@@ -17,7 +17,7 @@ Le site comprendra les sections suivantes :
 - PHP
 
 ## Auteurs
-[Bastien Brousse]([https://github.com/BBgamesTV))
+[Bastien Brousse]([https://github.com/BBgamesTV)
 Thuy Hang Nguyen
 
 N'hésitez pas à cloner ce projet et à contribuer en soumettant des pull requests ou en ouvrant des issues !
