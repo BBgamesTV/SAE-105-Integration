@@ -16,7 +16,7 @@
                 <ul>
                     <li><a href="#" class="active">>Home</a></1i>
                     <li id="list"><a href="about.html">>About</a></1i>
-                    <li id="list2"><a href="contact.html">>Contact</a></1i>
+                    <li id="list2"><a href="contact.html#contact">>Contact</a></1i>
                 </ul>
             </nav>
         </header>
@@ -31,14 +31,31 @@
             <article id="sky" class="sky">
 
 
-                <div class="box">
-                    <img width="100%" height="80%" src="./assets/constellations-grande-ourse-petite-ourse.jpg" alt="Espace1">
-                    <p></p>
+                <div class="box container">
+                    <img height="100%" src="assets/Omega_Nebula.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text">
+                        <h1>Nébuleuse M17</h1>
+                        <p>M17, également connue sous les noms de nébuleuse du Homard dans l'hémisphère sud, est une nébuleuse en émission renfermant un très jeune amas ouvert âgé d'à peine un million d'années a été découverte par l'astronome suisse Jean Philippe Loys de Cheseaux en 1745</p>
+
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="box">
-                    <img width="100%" height="80%" src="./assets/prise-vue-verticale-beau-ciel-etoile.jpg" alt="Espace2">
-                    <p></p>
+                <div class="box container">
+                    <img height="100%" src="assets/Milky_Way_2005.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text">
+                        <h1>La voie lactée</h1>
+                        <p>C'est une masse tournante formée de gaz, d'étoiles et d'autres objets maintenus ensemble par une attraction gravitationnelle mutuelle</p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="textbox">
+                    <p>L'astronomie est une science naturelle qui étudie les objets célestes tels que les étoiles, les planètes, les galaxies, les nébuleuses, les comètes, les astéroïdes, les trous noirs, et l'univers dans son ensemble.
+                        L'astronomie est considérée comme la plus ancienne des sciences
+                    </p>
                 </div>
 
             </article>
@@ -46,7 +63,7 @@
             <footer>
                 <p>© 2023 MMI S1 - SAE 105</p>
                 <p>Bastien Brousse & Thuy Hang Nguyen</p>
-                <p id="credits">Video de <a href="https://fr.vecteezy.com/video/28716272-sans-couture-boucle-galaxie-exploration-par-exterieur-espace-vers-embrase-laiteux-facon-galaxie-boucle-animation-de-en-volant-par-embrase-nebuleuses-des-nuages-et-etoiles-champ">Ismail Sahin</a> et images de <a href="https://fr.freepik.com/">freepik</a></p>   
+                <p id="credits">Video de <a href="https://fr.vecteezy.com/video/28716272-sans-couture-boucle-galaxie-exploration-par-exterieur-espace-vers-embrase-laiteux-facon-galaxie-boucle-animation-de-en-volant-par-embrase-nebuleuses-des-nuages-et-etoiles-champ">Ismail Sahin</a> et images de <a href="https://fr.wikipedia.org/wiki/Astronomie">Wikipedia</a></p>   
                 </footer>
         </main>
         <!-- <a href="https://fr.freepik.com/icone/uranus_1876100">Icône de Eucalyp</a> -->
@@ -71,7 +88,6 @@
                     text.style.color = "white"
                 }  
             })
-
 
             function createStar() {
                 const star = document.createElement('div');
