@@ -4,6 +4,8 @@
         <title>A Propos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/9e5fc47a4e.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="assets/uranus_1876100.png" />
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -14,6 +16,10 @@
                         <li><a href="index.html">>Home</a></1i>
                         <li id="list"><a class="active" href="about.html">>About</a></1i>
                         <li id="list2"><a href="contact.html">>Contact</a></1i>
+
+                        <input type="checkbox" id="mute-toggle" checked>
+                        <label for="mute-toggle" id="mute-label"><i id="mute_label" class="fa-solid fa-volume-xmark"></i></label>
+                        <audio id="audio" src="assets/layer1.mp3" type="audio/mp3" controls autoplay muted></audio>
                     </ul>
                 </nav>
         </header>
@@ -33,6 +39,23 @@
 
             </article>
         </main>
+
+        <script>
+            document
+                .getElementById("mute-toggle")
+                .addEventListener("change", function () {
+                    var audio = document.getElementById("audio");
+                    audio.muted = this.checked;
+    
+                    if (this.checked == true) {
+                        document.getElementById("mute_label").className =
+                            "fa-solid fa-volume-xmark";
+                    } else {
+                        document.getElementById("mute_label").className =
+                            "fa-solid fa-volume-high";
+                    }
+                });
+        </script>
     
     </body>
 </html>

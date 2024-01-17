@@ -14,11 +14,18 @@
         <a href="#" class="logo"><span>B</span><span>a</span><span>s</span><span>t</span><span>i</span><span>e</span><span>n</span> <span>&</span> <span>H</span><span>a</span><span>n</span><span>g</span></a>
             <nav>
                 <ul>
-                    <li><a href="#" class="active">>Home</a></1i>
-                    <li id="list"><a href="about.html">>About</a></1i>
-                    <li id="list2"><a href="contact.html#contact">>Contact</a></1i>
+                    <li><a href="#" class="active">>Home</a></li>
+                    <li id="list"><a href="about.html">>About</a></li>
+                    <li id="list2"><a href="contact.html#contact">>Contact</a></li>
+
+                    <input type="checkbox" id="mute-toggle" checked>
+                    <label for="mute-toggle" id="mute-label"><i id="mute_label" class="fa-solid fa-volume-xmark"></i></label>
+                    <audio id="audio" src="assets/layer1.mp3" type="audio/mp3" controls autoplay muted></audio>
+                    
                 </ul>
+                
             </nav>
+            
         </header>
 
         <main>
@@ -88,6 +95,17 @@
                     text.style.color = "white"
                 }  
             })
+
+            document.getElementById('mute-toggle').addEventListener('change', function() {
+                var audio = document.getElementById('audio');
+                audio.muted = this.checked;
+                
+                if (this.checked == true) {
+                    document.getElementById('mute_label').className = "fa-solid fa-volume-xmark";
+                } else {
+                    document.getElementById('mute_label').className = "fa-solid fa-volume-high";
+                }
+            });
 
             function createStar() {
                 const star = document.createElement('div');

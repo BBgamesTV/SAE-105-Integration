@@ -6,9 +6,14 @@
   font-weight: bold;
   scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar{
+  display: none; /* Hides the scrollbar in Chrome, Safari and Opera */
+}
+
 body {
   min-height: 100vh;
-  background: #2f0a45;
+  background: #1A0039;
   overflow-x: hidden;
   overflow-y: scroll;
   user-select: none;
@@ -117,7 +122,7 @@ section::before {
   bottom: 0;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top, #2f0a45, transparent);
+  background: linear-gradient(to top, #1A0039, transparent);
 }
 
 /* ------------------Article----------------- */
@@ -269,7 +274,7 @@ footer a:hover {
 }
 .contact form {
   border-radius: 20px;
-  background: #1e1e1e;
+  background: rgba(30, 30, 30,0.9);
   width: 70vw;
   height: 75vh;
   padding: 30px;
@@ -324,6 +329,15 @@ footer a:hover {
   resize: none;
 }
 
+article #background2 {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
 
 
 
@@ -365,5 +379,25 @@ form span{
   color: red;
 }
 
+#mute-toggle {
+  display: none;
+}
 
+#mute-label {
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.8s
+}
 
+#audio {
+  display: none;
+}
+
+#mute-toggle:checked + #mute-label + #audio {
+  display: none;
+}
+
+#mute_label {
+font-size: 2em;  
+}
