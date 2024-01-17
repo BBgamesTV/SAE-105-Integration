@@ -31,28 +31,47 @@
 
                 <form action="./POST.php" method="POST">
                     <div class="name">
-                        <label for="nom">Nom :</label>
-                        <input type="text" name="nom" placeholder="Nom">
-                        <label for="prenom">Prénom :</label>
-                        <input type="text" name="prenom" placeholder="Prénom">
+                        <label for="nom">Prénom Nom <span>*</span></label>
+                        <div class="input_name">
+                            <input required type="text" id="prenom" name="prenom" placeholder="Prénom">
+                            <input required type="text" id="nom" name="nom" placeholder="Nom de Famille">
+                        </div>
                     </div>
+
 
                     <div class="menu_deroulant">
-                        <select>
-                            <option value="Mr">M.</option>
-                            <option value="Mme">Mme</option>
-                        </select>
+                        <label for="sexe">Choix du Sexe</label>
+                        <div class="choix_sexe">
+                            <select>
+                                <option value="m">♂️ Homme</option>
+                                <option value="mme">♀️ Femme</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="bouton_radio">
-                        <input type="radio" name="choix1">
-                        <label for="choix1">Bien</label>
-                        <input type="radio" name="choix2">
-                        <label for="choix2">Moyen</label>
-                        <input type="radio" name="choix3">
-                        <label for="choix3">Mauvais</label>
+                    <div class="note">
+                        <label for="rate">Note <span>*</span> :</label>
+                        <div class="rating">
+                            <input value="5" name="rate" id="star5" type="radio">
+                            <label title="text" for="star5"></label>
+                            <input value="4" name="rate" id="star4" type="radio">
+                            <label title="text" for="star4"></label>
+                            <input value="3" name="rate" id="star3" type="radio" checked="">
+                            <label title="text" for="star3"></label>
+                            <input value="2" name="rate" id="star2" type="radio">
+                            <label title="text" for="star2"></label>
+                            <input value="1" name="rate" id="star1" type="radio">
+                            <label title="text" for="star1"></label>
+                        </div>
                     </div>
 
+                    <div class="commentaire">
+                        <label for="com">Commentaire :</label>
+                        <div class="commentaire_input">
+                            <textarea id="story" name="story" rows="5" cols="33" placeholder="Moue pas mal..."></textarea>
+                        </div>
+
+                    </div>
                     <input type="submit" name="envoyer" placeholder="Envoyer">
 
                 </form>
@@ -61,6 +80,12 @@
                 
 
             </article>
+
+            <footer>
+                <p>© 2023 MMI S1 - SAE 105</p>
+                <p>Bastien Brousse & Thuy Hang Nguyen</p>
+                <p id="credits">Video de <a href="https://fr.vecteezy.com/video/28716272-sans-couture-boucle-galaxie-exploration-par-exterieur-espace-vers-embrase-laiteux-facon-galaxie-boucle-animation-de-en-volant-par-embrase-nebuleuses-des-nuages-et-etoiles-champ">Ismail Sahin</a> et images de <a href="https://fr.wikipedia.org/wiki/Astronomie">Wikipedia</a></p>   
+                </footer>
         </main>
     
     </body>
