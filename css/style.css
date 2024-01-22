@@ -414,8 +414,7 @@ font-size: 2em;
 .card {
   height: 600px;
   margin: 25px;
-  padding: 15px;
-  width: 400px;
+  width: 450px;
   background: red;
   border-radius: 25px;
   border: outset 5px white;
@@ -428,7 +427,6 @@ font-size: 2em;
     overflow: hidden;
     color: #d8a8f0;
     background-color: #2f0a45;
-    padding: 9px 18px;
     z-index: 2;
 }
 
@@ -448,7 +446,7 @@ font-size: 2em;
 }
 
 #profileCard p{
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .cards h1 {
@@ -457,4 +455,20 @@ font-size: 2em;
   color:white;
   font-size: 4em;
   margin:10px;
+}
+
+.error {
+  font-size: 1em;
+  color: red;
+  background-color: rgb(255, 0, 0,0.1);
+  margin: 10px;
+  padding: 12px 24px;
+}
+
+.sucess {
+  font-size: 1em;
+  color: green;
+  background-color: rgb(0, 255, 0,0.1);
+  margin: 10px;
+  padding: 12px 24px;
 }

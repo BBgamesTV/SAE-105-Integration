@@ -42,7 +42,18 @@
                 alt="Fond 2" loop autoplay muted id="background2"></video>
             <h1 style="color: white">Formulaire de Contact</h1>
 
-            <form action="./POST.php" method="POST">
+            <form action="./php/POST.php" method="POST">
+            <?php
+                if(isset($_GET["err"])){
+                    if($_GET["err"] == 1){
+                        echo("<p class='error'>Appuyez sur le bouton envoyer</p>");
+                    } elseif($_GET["err"] == 2) {
+                        echo("<p class='error'>Aucune étoile sélectionnée.</p>");
+                    } elseif($_GET["err"] == 0) {
+                        echo("<p class='sucess'>Merci, le formulaire a bien éte envoyer</p>");
+                    }
+                }
+            ?>
                 <div class="name">
                     <label for="nom">Prénom Nom <span>*</span></label>
                     <div class="input_name">
@@ -54,7 +65,7 @@
                 <div class="menu_deroulant">
                     <label for="sexe">Choix du Sexe</label>
                     <div class="choix_sexe">
-                        <select>
+                        <select name="sexeOption">
                             <option value="mme">Pas spécifiée</option>
                             <option value="m">♂️ Homme</option>
                             <option value="mme">♀️ Femme</option>
@@ -87,6 +98,7 @@
                     </div>
                 </div>
                 <input type="submit" name="envoyer" placeholder="Envoyer" />
+                
             </form>
         </article>
 
