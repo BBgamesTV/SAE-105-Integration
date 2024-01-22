@@ -12,14 +12,14 @@
 
 <body>
     <header>
-        <a href="#"
-            class="logo"><span>B</span><span>a</span><span>s</span><span>t</span><span>i</span><span>e</span><span>n</span>
+        <a href="#" class="logo"><span>B</span><span>a</span><span>s</span><span>t</span><span>i</span><span>e</span><span>n</span>
             <span>&</span> <span>H</span><span>a</span><span>n</span><span>g</span></a>
         <nav>
             <ul>
                 <li><a href="./index.html">>Home</a></li>
                 <li><a href="./discover.html#sky">>Découvrir</a></li>
-                <li><a href="about.html">>About</a></li>
+                <li><a href="./map.html">>Carte</a></li>
+                <li><a href="./about.html">>About</a></li>
                 <li><a href="#">>Contact</a></li>
 
                 <input type="checkbox" id="mute-toggle" checked>
@@ -31,29 +31,27 @@
 
     <main>
         <section>
-            <video src="assets/vecteezy_seamless-loop-galaxy-exploration-through-outer-space-towards_28716271.mp4"
-                alt="Image de Fond" loop autoplay muted id="background"></video>
+            <video src="assets/vecteezy_seamless-loop-galaxy-exploration-through-outer-space-towards_28716271.mp4" alt="Image de Fond" loop autoplay muted id="background"></video>
             <h1 id="text1">Page Contact</h1>
             <a href="#sky"><i id="arrow" class="fa-solid fa-angles-down"></i></a>
         </section>
 
         <article id="contact" class="contact">
-            <video src="/assets/vecteezy_seamless-loop-galaxy-exploration-through-outer-space-towards_28716268.mp4"
-                alt="Fond 2" loop autoplay muted id="background2"></video>
+            <video src="/assets/vecteezy_seamless-loop-galaxy-exploration-through-outer-space-towards_28716268.mp4" alt="Fond 2" loop autoplay muted id="background2"></video>
             <h1 style="color: white">Formulaire de Contact</h1>
 
-            <form action="./php/POST.php" method="POST">
-            <?php
-                if(isset($_GET["err"])){
-                    if($_GET["err"] == 1){
-                        echo("<p class='error'>Appuyez sur le bouton envoyer</p>");
-                    } elseif($_GET["err"] == 2) {
-                        echo("<p class='error'>Aucune étoile sélectionnée.</p>");
-                    } elseif($_GET["err"] == 0) {
-                        echo("<p class='sucess'>Merci, le formulaire a bien éte envoyer</p>");
+            <form action="./php/POST.php" method="POST" id="formu">
+                <?php
+                if (isset($_GET["err"])) {
+                    if ($_GET["err"] == 1) {
+                        echo ("<p class='error'>Appuyez sur le bouton envoyer</p>");
+                    } elseif ($_GET["err"] == 2) {
+                        echo ("<p class='error'>Aucune étoile sélectionnée.</p>");
+                    } elseif ($_GET["err"] == 0) {
+                        echo ("<p class='sucess'>Merci, le formulaire a bien été envoyer</p>");
                     }
                 }
-            ?>
+                ?>
                 <div class="name">
                     <label for="nom">Prénom Nom <span>*</span></label>
                     <div class="input_name">
@@ -93,12 +91,11 @@
                 <div class="commentaire">
                     <label for="com">Commentaire :</label>
                     <div class="commentaire_input">
-                        <textarea id="story" name="story" rows="5" cols="33"
-                            placeholder="Donne nous ton avis"></textarea>
+                        <textarea id="story" name="story" rows="5" cols="33" placeholder="Donne nous ton avis"></textarea>
                     </div>
                 </div>
                 <input type="submit" name="envoyer" placeholder="Envoyer" />
-                
+
             </form>
         </article>
 
@@ -107,8 +104,7 @@
             <p>Bastien Brousse & Thuy Hang Nguyen</p>
             <p id="credits">
                 Video de
-                <a
-                    href="https://fr.vecteezy.com/video/28716272-sans-couture-boucle-galaxie-exploration-par-exterieur-espace-vers-embrase-laiteux-facon-galaxie-boucle-animation-de-en-volant-par-embrase-nebuleuses-des-nuages-et-etoiles-champ">Ismail
+                <a href="https://fr.vecteezy.com/video/28716272-sans-couture-boucle-galaxie-exploration-par-exterieur-espace-vers-embrase-laiteux-facon-galaxie-boucle-animation-de-en-volant-par-embrase-nebuleuses-des-nuages-et-etoiles-champ">Ismail
                     Sahin</a>
                 et images de
                 <a href="https://fr.wikipedia.org/wiki/Astronomie">Wikipedia</a>
@@ -119,7 +115,7 @@
     <script>
         document
             .getElementById("mute-toggle")
-            .addEventListener("change", function () {
+            .addEventListener("change", function() {
                 var audio = document.getElementById("audio");
                 audio.muted = this.checked;
 

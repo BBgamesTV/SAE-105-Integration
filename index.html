@@ -1,144 +1,158 @@
 <!doctype html>
 <html lang="fr">
-    <head>
-        <title>SAE 105 - Intégration</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <script src="https://kit.fontawesome.com/9e5fc47a4e.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/png" href="assets/uranus_1876100.png" />
-    </head>
 
-    <body>
-        <header>
-        <a href="#" class="logo"><span>B</span><span>a</span><span>s</span><span>t</span><span>i</span><span>e</span><span>n</span> <span>&</span> <span>H</span><span>a</span><span>n</span><span>g</span></a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html" class="active">>Home</a></li>
-                    <li><a href="./discover.html">>Découvrir</a></li>
-                    <li><a href="./about.html">>About</a></li>
-                    <li><a href="./contact.php#contact">>Contact</a></li>
+<head>
+    <title>SAE 105 - Intégration</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/9e5fc47a4e.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="assets/uranus_1876100.png" />
+</head>
 
-                    <input type="checkbox" id="mute-toggle" checked>
-                    <label for="mute-toggle" id="mute-label"><i id="mute_label" class="fa-solid fa-volume-xmark"></i></label>
-                    <audio id="audio" src="assets/layer1.mp3" type="audio/mp3" controls autoplay muted></audio>
-                    
-                </ul>
-                
-            </nav>
-            
-        </header>
+<body>
+    <header>
+        <a href="#"
+            class="logo"><span>B</span><span>a</span><span>s</span><span>t</span><span>i</span><span>e</span><span>n</span>
+            <span>&</span> <span>H</span><span>a</span><span>n</span><span>g</span></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="active">>Home</a></li>
+                <li><a href="./discover.html#sky">>Découvrir</a></li>
+                <li><a href="./map.html">>Carte</a></li>
+                <li><a href="./about.html">>About</a></li>
+                <li><a href="./contact.php#contact">>Contact</a></li>
 
-        <main>
-            <section>
-                <video src="assets/vecteezy_seamless-loop-galaxy-exploration-through-outer-space-towards_28716272.mp4" alt="Image de Fond" loop autoplay muted id="background"></video>
-                <h1 id="text1">Notre Passion</h1>
-                <a href="#sky"> <i id="arrow" class="fa-solid fa-angles-down"></i></a>
-            </section>
+                <input type="checkbox" id="mute-toggle" checked>
+                <label for="mute-toggle" id="mute-label"><i id="mute_label"
+                        class="fa-solid fa-volume-xmark"></i></label>
+                <audio id="audio" src="assets/layer1.mp3" type="audio/mp3" controls autoplay muted></audio>
 
-            <article id="sky" class="sky" style=height:100vh;>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <video src="assets/vecteezy_seamless-loop-galaxy-exploration-through-outer-space-towards_28716272.mp4"
+                alt="Image de Fond" loop autoplay muted id="background"></video>
+            <h1 id="text1">Notre Passion</h1>
+            <a href="#sky"> <i id="arrow" class="fa-solid fa-angles-down"></i></a>
+        </section>
+
+        <article id="sky" class="sky" style=height:100vh;>
 
 
-                <div class="box container">
-                    <img height="100%" src="assets/Omega_Nebula.jpg" alt="Avatar" class="image">
-                    <div class="overlay">
-                      <div class="text">
+            <div class="box container">
+                <img height="100%" src="assets/Omega_Nebula.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">
                         <h1>Nébuleuse M17</h1>
-                        <p>M17, également connue sous les noms de nébuleuse du Homard dans l'hémisphère sud, est une nébuleuse en émission renfermant un très jeune amas ouvert âgé d'à peine un million d'années a été découverte par l'astronome suisse Jean Philippe Loys de Cheseaux en 1745</p>
-                        </div>
+                        <p>M17, également connue sous les noms de nébuleuse du Homard dans l'hémisphère sud, est une
+                            nébuleuse en émission renfermant un très jeune amas ouvert âgé d'à peine un million d'années
+                            a été découverte par l'astronome suisse Jean Philippe Loys de Cheseaux en 1745</p>
                     </div>
                 </div>
-                
-                <div class="box container">
-                    <img height="100%" src="assets/Milky_Way_2005.jpg" alt="Avatar" class="image">
-                    <div class="overlay">
-                      <div class="text">
+            </div>
+
+            <div class="box container">
+                <img height="100%" src="assets/Milky_Way_2005.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">
                         <h1>La voie lactée</h1>
-                        <p>C'est une masse tournante formée de gaz, d'étoiles et d'autres objets maintenus ensemble par une attraction gravitationnelle mutuelle</p>
-                      </div>
+                        <p>C'est une masse tournante formée de gaz, d'étoiles et d'autres objets maintenus ensemble par
+                            une attraction gravitationnelle mutuelle</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="textbox">
-                    <p>L'astronomie est une science naturelle qui étudie les objets célestes tels que les étoiles, les planètes, les galaxies, les nébuleuses, les comètes, les astéroïdes, les trous noirs, et l'univers dans son ensemble.
-                        L'astronomie est considérée comme la plus ancienne des sciences
-                    </p>
-                    <a href="./discover.html">Découvrir plus</a>
-                </div>
+            <div class="textbox">
+                <p>L'astronomie est une science naturelle qui étudie les objets célestes tels que les étoiles, les
+                    planètes, les galaxies, les nébuleuses, les comètes, les astéroïdes, les trous noirs, et l'univers
+                    dans son ensemble.
+                    L'astronomie est considérée comme la plus ancienne des sciences
+                </p>
+                <a href="./discover.html">Découvrir plus</a>
+            </div>
 
-            </article>
+        </article>
 
-            <footer>
-                <p>© 2023 MMI S1 - SAE 105</p>
-                <p>Bastien Brousse & Thuy Hang Nguyen</p>
-                <p id="credits">Video de <a href="https://fr.vecteezy.com/video/28716272-sans-couture-boucle-galaxie-exploration-par-exterieur-espace-vers-embrase-laiteux-facon-galaxie-boucle-animation-de-en-volant-par-embrase-nebuleuses-des-nuages-et-etoiles-champ">Ismail Sahin</a> et images de <a href="https://fr.wikipedia.org/wiki/Astronomie">Wikipedia</a></p>   
-                </footer>
-        </main>
-        <!-- <a href="https://fr.freepik.com/icone/uranus_1876100">Icône de Eucalyp</a> -->
-        <!-- <a href="https://fr.freepik.com/photos-gratuite/prise-vue-verticale-beau-ciel-etoile_11818437.htm#query=astronomie&position=2&from_view=search&track=sph&uuid=e8189902-b6a6-4343-9ef4-4f90cd22375d">Image de wirestock</a> sur Freepik -->
-                        
-        <script>
-            let text = document.getElementById('text1')
-            let arrow = document.getElementById('arrow')
+        <footer>
+            <p>© 2023 MMI S1 - SAE 105</p>
+            <p>Bastien Brousse & Thuy Hang Nguyen</p>
+            <p id="credits">Video de <a
+                    href="https://fr.vecteezy.com/video/28716272-sans-couture-boucle-galaxie-exploration-par-exterieur-espace-vers-embrase-laiteux-facon-galaxie-boucle-animation-de-en-volant-par-embrase-nebuleuses-des-nuages-et-etoiles-champ">Ismail
+                    Sahin</a> et images de <a href="https://fr.wikipedia.org/wiki/Astronomie">Wikipedia</a></p>
+        </footer>
+    </main>
+    <!-- <a href="https://fr.freepik.com/icone/uranus_1876100">Icône de Eucalyp</a> -->
+    <!-- <a href="https://fr.freepik.com/photos-gratuite/prise-vue-verticale-beau-ciel-etoile_11818437.htm#query=astronomie&position=2&from_view=search&track=sph&uuid=e8189902-b6a6-4343-9ef4-4f90cd22375d">Image de wirestock</a> sur Freepik -->
 
-            window.addEventListener('scroll',function(){
-                let value = window.scrollY;
-                text.style.marginTop = value * 0.135 + 'vh';
-                let opacity_value = value / 10;
-                arrow.style.opacity = 100 - opacity_value + '%';
-                console.log(value)
-                if(value > 1000){
-                    text.innerHTML = "L'Astronomie";
-                    text.style.textTransform = "Capitalize";
-                    text.style.color = "#baeaf8"
-                } else {
-                    text.innerHTML = "Notre Passion";
-                    text.style.color = "white"
-                }  
-            })
+    <script>
+        let text = document.getElementById('text1')
+        let arrow = document.getElementById('arrow')
 
-            document.getElementById('mute-toggle').addEventListener('change', function() {
-                var audio = document.getElementById('audio');
-                audio.muted = this.checked;
-                
-                if (this.checked == true) {
-                    document.getElementById('mute_label').className = "fa-solid fa-volume-xmark";
-                } else {
-                    document.getElementById('mute_label').className = "fa-solid fa-volume-high";
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            text.style.marginTop = value * 0.135 + 'vh';
+            let opacity_value = value / 10;
+            arrow.style.opacity = 100 - opacity_value + '%';
+            console.log(value)
+            if (value > 1000) {
+                text.innerHTML = "L'Astronomie";
+                text.style.textTransform = "Capitalize";
+                text.style.color = "#baeaf8"
+            } else {
+                text.innerHTML = "Notre Passion";
+                text.style.color = "white"
+            }
+        })
+
+        document.getElementById('mute-toggle').addEventListener('change', function () {
+            var audio = document.getElementById('audio');
+            audio.muted = this.checked;
+
+            if (this.checked == true) {
+                document.getElementById('mute_label').className = "fa-solid fa-volume-xmark";
+            } else {
+                document.getElementById('mute_label').className = "fa-solid fa-volume-high";
+            }
+        });
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.zIndex = 1;
+            document.querySelector('article').appendChild(star);
+        }
+
+        let keysPressed = [];
+
+        window.addEventListener('keydown', function (e) {
+            keysPressed.push(e.key);
+            keysPressed = keysPressed.slice(-5);
+
+            if (
+                keysPressed[0] === 's' &&
+                keysPressed[1] === 't' &&
+                keysPressed[2] === 'a' &&
+                keysPressed[3] === 'r' &&
+                keysPressed[4] === 's'
+            ) {
+                let bg_sky = document.getElementById('sky')
+                bg_sky.style.background = "black"
+                for (let i = 0; i < 100; i++) {
+                    createStar();
                 }
-            });
-
-            function createStar() {
-                const star = document.createElement('div');
-                star.classList.add('star');
-                star.style.left = Math.random() * 100 + '%';
-                star.style.top = Math.random() * 100 + '%';
-                star.style.zIndex = 1;
-                document.querySelector('article').appendChild(star);
+                console.log('Code Activé les touches ont été pressées dans l\'ordre !');
             }
 
-            let keysPressed = [];
+        });
+    </script>
+</body>
 
-            window.addEventListener('keydown', function(e) {
-                keysPressed.push(e.key);
-                keysPressed = keysPressed.slice(-5); 
-
-                if (
-                    keysPressed[0] === 's' &&
-                    keysPressed[1] === 't' &&
-                    keysPressed[2] === 'a' &&
-                    keysPressed[3] === 'r' &&
-                    keysPressed[4] === 's'
-                ) {
-                    let bg_sky = document.getElementById('sky')
-                    bg_sky.style.background = "black"
-                    for (let i = 0; i < 100; i++) {
-                        createStar();
-                    }
-                    console.log('Code Activé les touches ont été pressées dans l\'ordre !');
-                }
-
-            });
-        </script>
-    </body>
 </html>
