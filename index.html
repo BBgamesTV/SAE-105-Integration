@@ -14,9 +14,10 @@
         <a href="#" class="logo"><span>B</span><span>a</span><span>s</span><span>t</span><span>i</span><span>e</span><span>n</span> <span>&</span> <span>H</span><span>a</span><span>n</span><span>g</span></a>
             <nav>
                 <ul>
-                    <li><a href="#" class="active">>Home</a></li>
-                    <li id="list"><a href="about.html">>About</a></li>
-                    <li id="list2"><a href="contact.html#contact">>Contact</a></li>
+                    <li><a href="./index.html" class="active">>Home</a></li>
+                    <li><a href="./discover.html">>Découvrir</a></li>
+                    <li><a href="./about.html">>About</a></li>
+                    <li><a href="./contact.html#contact">>Contact</a></li>
 
                     <input type="checkbox" id="mute-toggle" checked>
                     <label for="mute-toggle" id="mute-label"><i id="mute_label" class="fa-solid fa-volume-xmark"></i></label>
@@ -35,7 +36,7 @@
                 <a href="#sky"> <i id="arrow" class="fa-solid fa-angles-down"></i></a>
             </section>
 
-            <article id="sky" class="sky">
+            <article id="sky" class="sky" style=height:100vh;>
 
 
                 <div class="box container">
@@ -63,6 +64,7 @@
                     <p>L'astronomie est une science naturelle qui étudie les objets célestes tels que les étoiles, les planètes, les galaxies, les nébuleuses, les comètes, les astéroïdes, les trous noirs, et l'univers dans son ensemble.
                         L'astronomie est considérée comme la plus ancienne des sciences
                     </p>
+                    <a href="./discover.html">Découvrir plus</a>
                 </div>
 
             </article>
@@ -87,7 +89,7 @@
                 arrow.style.opacity = 100 - opacity_value + '%';
                 console.log(value)
                 if(value > 1000){
-                    text.innerHTML = "L'astronomie";
+                    text.innerHTML = "L'Astronomie";
                     text.style.textTransform = "Capitalize";
                     text.style.color = "#baeaf8"
                 } else {

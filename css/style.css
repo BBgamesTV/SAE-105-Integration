@@ -128,7 +128,6 @@ section::before {
 /* ------------------Article----------------- */
 
 article {
-  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -400,4 +399,62 @@ form span{
 
 #mute_label {
 font-size: 2em;  
+}
+
+.cards {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.card {
+  height: 600px;
+  margin: 25px;
+  padding: 15px;
+  width: 400px;
+  background: red;
+  border-radius: 25px;
+  border: outset 5px white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profileCard{
+    overflow: hidden;
+    color: #d8a8f0;
+    background-color: #2f0a45;
+    padding: 9px 18px;
+    z-index: 2;
+}
+
+#profileCard:hover {
+  transition: transform 0.3s ease;
+  box-shadow: 0px 0px 1vmin 0px #d8a8f0; /* Ajoute une transition pour une animation plus douce */
+}
+
+#profileCard h1,p {
+  margin: 9px;
+
+  font-weight: bold;
+}
+
+#profileCard h1{
+  font-size: 1.5em;
+}
+
+#profileCard p{
+  font-size: 1.2em;
+}
+
+.cards h1 {
+  width: 100%;
+  text-align:center;
+  color:white;
+  font-size: 4em;
+  margin:10px;
 }
