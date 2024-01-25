@@ -20,7 +20,7 @@
                 <li><a href="./discover.html#sky">>Découvrir</a></li>
                 <li><a href="./map.html">>Carte</a></li>
                 <li><a href="./about.html">>About</a></li>
-                <li><a href="#">>Contact</a></li>
+                <li><a href="#" class="active">>Contact</a></li>
 
                 <input type="checkbox" id="mute-toggle" checked>
                 <label for="mute-toggle" id="mute-label"><i id="mute_label" class="fa-solid fa-volume-xmark"></i></label>
